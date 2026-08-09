@@ -53,8 +53,8 @@ PROFILE = {
         "i am a firm believer of passion and determination"
     ),
     "profile_image": "images/IMG_1993.jpg",  # CUSTOMIZE: replace with your photo
-    "location": "Faisalabad, Punjab, Pakistan",
-    "email": "your.email@example.com",
+    "location": "Mianwali, Punjab, Pakistan",
+    "email": "wajahat.aidev@gmail.com",
     "resume_file": "resume/resume.pdf",  # CUSTOMIZE: place your resume PDF here
 }
 
