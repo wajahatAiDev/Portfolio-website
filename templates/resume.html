@@ -1,0 +1,94 @@
+{% extends "base.html" %}
+{% block title %}{{ profile.name }} | Resume{% endblock %}
+
+{% block content %}
+
+<section class="page-header page-header--cover">
+  <div class="page-header-cover">
+    <img src="{{ url_for('static', filename=covers.resume) }}" alt="" onerror="this.src='https://placehold.co/1600x500/141821/7dd3fc?text=Resume'">
+    <div class="page-header-cover-overlay"></div>
+  </div>
+  <div class="section-container page-header-content">
+    <h1>My Resume</h1>
+    <p>Education, skills, and experience</p>
+    <div class="resume-actions">
+      <a href="{{ url_for('static', filename=profile.resume_file) }}" class="btn btn-outline" target="_blank" rel="noopener">View Resume</a>
+      <a href="{{ url_for('static', filename=profile.resume_file) }}" class="btn btn-primary" download>Download Resume (PDF)</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-container">
+    <h2 class="section-title">Education</h2>
+    <div class="timeline">
+      {% for edu in education %}
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">{{ edu.duration }}</span>
+          <h3>{{ edu.degree }}</h3>
+          <p class="timeline-org">{{ edu.institution }}</p>
+          <p>{{ edu.description }}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="section-container">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills-grid">
+      {% for category, items in skills.items() %}
+      <div class="skill-card">
+        <h3>{{ category }}</h3>
+        <div class="badge-list">
+          {% for item in items %}
+          <span class="badge">{{ item }}</span>
+          {% endfor %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-container">
+    <h2 class="section-title">Certifications</h2>
+    <div class="card-grid card-grid-3">
+      {% for cert in certifications %}
+      <div class="info-card">
+        <h3>{{ cert.name }}</h3>
+        <p>{{ cert.issuer }}</p>
+        <span class="badge badge-small">{{ cert.year }}</span>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="section-container">
+    <h2 class="section-title">Experience</h2>
+    <div class="timeline">
+      {% for exp in experience %}
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">{{ exp.duration }}</span>
+          <h3>{{ exp.role }}</h3>
+          <p class="timeline-org">{{ exp.organization }}</p>
+          <p>{{ exp.description }}</p>
+        </div>
+      </div>
+      {% else %}
+      <p>No experience added yet. <!-- CUSTOMIZE: add internships or jobs in app.py --></p>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% block title %}{{ profile.name }} | Courses & Certificates{% endblock %}
+
+{% block content %}
+
+<section class="page-header page-header--cover">
+  <div class="page-header-cover">
+    <img src="{{ url_for('static', filename=covers.achievements) }}" alt="" onerror="this.src='https://placehold.co/1600x500/141821/7dd3fc?text=Courses+%26+Certificates'">
+    <div class="page-header-cover-overlay"></div>
+  </div>
+  <div class="section-container page-header-content">
+    <h1>Courses & Certificates</h1>
+    <p>Certificates, awards, competitions, and milestones</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-container">
+    <div class="card-grid card-grid-3">
+      {% for item in achievements %}
+      <div class="info-card achievement-card">
+        <div class="achievement-image">
+          <img src="{{ url_for('static', filename=item.image) }}" alt="{{ item.title }}" onerror="this.src='https://placehold.co/500x300/141821/7dd3fc?text=Achievement'">
+        </div>
+        <span class="badge badge-small">{{ item.category }}</span>
+        <h3>{{ item.title }}</h3>
+        <p>{{ item.description }}</p>
+        <span class="timeline-date">{{ item.date }}</span>
+        <button type="button" class="btn btn-outline view-achievement-btn"
+          data-image="{{ url_for('static', filename=item.image) }}"
+          data-fallback="https://placehold.co/700x450/141821/7dd3fc?text=Achievement"
+          data-title="{{ item.title }}"
+          data-date="{{ item.date }}"
+          data-category="{{ item.category }}"
+          data-description="{{ item.description }}">
+          View Achievement
+        </button>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<div class="lightbox" id="achievementLightbox">
+  <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
+  <div class="lightbox-content">
+    <button type="button" class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+    <img src="" alt="" id="lightboxImage">
+    <div class="lightbox-body">
+      <span class="badge badge-small" id="lightboxCategory"></span>
+      <h3 id="lightboxTitle"></h3>
+      <span class="timeline-date" id="lightboxDate"></span>
+      <p id="lightboxDescription"></p>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
