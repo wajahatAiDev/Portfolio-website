@@ -60,7 +60,7 @@ PROFILE = {
 
 # CUSTOMIZE: skills shown as badges on Home & Resume pages
 SKILLS = {
-    "Programming Languages": ["Python", "C++", "SQL", "JavaScript"],
+    "Programming Languages": ["Python", "C++", "SQL", "Java"],
     "AI / ML": ["Scikit-learn", "TensorFlow", "PyTorch", "Pandas", "NumPy"],
     "Tools & Technologies": ["Git & GitHub", "Jupyter Notebook", "Flask", "VS Code", "Linux"],
     "Other": ["Data Visualization", "REST APIs", "Problem Solving"],
@@ -70,15 +70,15 @@ SKILLS = {
 EDUCATION = [
     {
         "degree": "BS Artificial Intelligence",
-        "institution": "Your University Name",
-        "duration": "2023 - 2027",
+        "institution": "Gomal University DI Khan",
+        "duration": "2024 - 2028",
         "description": "Coursework in machine learning, deep learning, data structures, and algorithms.",
     },
     {
-        "degree": "Intermediate (Pre-Engineering)",
-        "institution": "Your College Name",
+        "degree": "Intermediate (ICS)",
+        "institution": "MLW Higher Secondary School Miawali",
         "duration": "2021 - 2023",
-        "description": "Focused on mathematics, physics, and computer science fundamentals.",
+        "description": "Focused on mathematics and computer science fundamentals.",
     },
 ]
 
@@ -135,11 +135,13 @@ PROJECTS = [
 # placeholder automatically if the file doesn't exist yet.
 ACHIEVEMENTS = [
     {
-        "title": "1st Place — University AI Hackathon",
-        "date": "2025",
-        "description": "Won first place for building an ML-powered solution within 24 hours.",
-        "category": "Hackathon",
-        "image": "images/achievements/hackathon.jpg",
+        "title": "Data Analystis Job Simulation Completion Certificate",
+        "date": "August  2026",
+        "description": """Completed the Data Analytics Job Simulation by
+         Deloitte. Gained hands-on experience in data analysis and forensic 
+         technology through practical, real-world tasks. """,
+        "category": "Completion",
+        "image": "images/achievements/Delotty.png",
     },
     {
         "title": "Dean's Honor List",
@@ -224,8 +226,8 @@ BLOG_POSTS = [
 
 # CUSTOMIZE: social / contact links shown on the Contact page and footer
 SOCIAL_LINKS = {
-    "github": "https://github.com/yourusername",
-    "linkedin": "https://linkedin.com/in/yourusername",
+    "github": "https://github.com/wajahatAiDev",
+    "linkedin": "https://www.linkedin.com/in/muhammad-wajahat-khan-95a016421/",
     "email": PROFILE["email"],
 }
 

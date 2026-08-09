@@ -39,17 +39,29 @@ document.addEventListener("DOMContentLoaded", () => {
     const closeBtn = document.getElementById("lightboxClose");
     const backdrop = document.getElementById("lightboxBackdrop");
 
+    const openAchievementLightbox = (btn) => {
+      lightboxImage.src = btn.dataset.image;
+      lightboxImage.onerror = () => { lightboxImage.src = btn.dataset.fallback; };
+      lightboxImage.alt = btn.dataset.title;
+      lightboxTitle.textContent = btn.dataset.title;
+      lightboxDate.textContent = btn.dataset.date;
+      lightboxCategory.textContent = btn.dataset.category;
+      lightboxDescription.textContent = btn.dataset.description;
+      lightbox.classList.add("open");
+    };
+
     document.querySelectorAll(".view-achievement-btn").forEach((btn) => {
-      btn.addEventListener("click", () => {
-        lightboxImage.src = btn.dataset.image;
-        lightboxImage.onerror = () => { lightboxImage.src = btn.dataset.fallback; };
-        lightboxImage.alt = btn.dataset.title;
-        lightboxTitle.textContent = btn.dataset.title;
-        lightboxDate.textContent = btn.dataset.date;
-        lightboxCategory.textContent = btn.dataset.category;
-        lightboxDescription.textContent = btn.dataset.description;
-        lightbox.classList.add("open");
-      });
+      btn.addEventListener("click", () => openAchievementLightbox(btn));
+    });
+
+    // Clicking the certificate/achievement image does the same thing as
+    // clicking its card's "View Achievement" button.
+    document.querySelectorAll(".achievement-card").forEach((card) => {
+      const img = card.querySelector(".achievement-image");
+      const btn = card.querySelector(".view-achievement-btn");
+      if (img && btn) {
+        img.addEventListener("click", () => openAchievementLightbox(btn));
+      }
     });
 
     const closeLightbox = () => lightbox.classList.remove("open");
