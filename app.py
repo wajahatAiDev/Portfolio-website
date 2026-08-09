@@ -54,7 +54,7 @@ PROFILE = {
     ),
     "profile_image": "images/IMG_1993.jpg",  # CUSTOMIZE: replace with your photo
     "location": "Faisalabad, Punjab, Pakistan",
-    "email": "wajahat.aidev@gmail.com",
+    "email": "your.email@example.com",
     "resume_file": "resume/resume.pdf",  # CUSTOMIZE: place your resume PDF here
 }
 
@@ -71,7 +71,7 @@ EDUCATION = [
     {
         "degree": "BS Artificial Intelligence",
         "institution": "Your University Name",
-        "duration": "2024 - 2028",
+        "duration": "2023 - 2027",
         "description": "Coursework in machine learning, deep learning, data structures, and algorithms.",
     },
     {
@@ -225,7 +225,7 @@ BLOG_POSTS = [
 # CUSTOMIZE: social / contact links shown on the Contact page and footer
 SOCIAL_LINKS = {
     "github": "https://github.com/yourusername",
-    "linkedin": "https://www.linkedin.com/in/muhammad-wajahat-khan-95a016421/",
+    "linkedin": "https://linkedin.com/in/yourusername",
     "email": PROFILE["email"],
 }
 
@@ -236,6 +236,7 @@ COVER_IMAGES = {
     "projects": "images/covers/projects-cover.jpg",
     "achievements": "images/covers/achievements-cover.jpg",
     "blog": "images/covers/blog-cover.jpg",
+    "contact": "images/covers/contact-cover.jpg",
 }
 
 

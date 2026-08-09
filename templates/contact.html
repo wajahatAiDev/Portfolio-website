@@ -3,8 +3,12 @@
 
 {% block content %}
 
-<section class="page-header">
-  <div class="section-container">
+<section class="page-header page-header--cover">
+  <div class="page-header-cover">
+    <img src="{{ url_for('static', filename=covers.contact) }}" alt="" onerror="this.src='https://placehold.co/1600x500/141821/7dd3fc?text=Contact'">
+    <div class="page-header-cover-overlay"></div>
+  </div>
+  <div class="section-container page-header-content">
     <h1>Get In Touch</h1>
     <p>Feel free to reach out through any of the channels below.</p>
   </div>
