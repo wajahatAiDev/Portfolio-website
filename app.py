@@ -104,29 +104,34 @@ PROJECTS = [
     {
         "id": 1,
         "title": "Titanic Survival Predictor",
-        "description": "A machine learning model that predicts passenger survival on the Titanic using logistic regression and feature engineering.",
-        "technologies": ["Python", "Scikit-learn", "Pandasssss", "Flask"],
-        "github": "https://github.com/yourusername/titanic-predictor",
-        "demo": "#",
-        "image": "images/project-placeholder.jpg",
+
+        "description": """Titanic Survival Predictor — an end-to-end ML project that 
+        trains a classification pipeline (Pclass, Sex, Age, Fare, Embarked, Family size,
+         Name title) on the Titanic dataset, achieving 90% accuracy, and deploys it via a
+          Flask web app with a custom interface for real-time predictions.""",
+
+        "technologies": ["Python", "Scikit-learn", "Pandas", "Flask","Numpy"],
+        "github": "https://github.com/wajahatAiDev/Titanic-Survival-Predictor.git",
+        "demo": "https://titanic-survival-predictor-w94o.onrender.com/",
+        "image": "images/covers/titanic.jpg",
     },
     {
-        "id": 2,
-        "title": "Cricket Win Probability App",
-        "description": "A live win-probability predictor for cricket matches, built with a trained ML model and a Flask web interface.",
-        "technologies": ["Python", "Flask", "Scikit-learn", "JavaScript"],
-        "github": "https://github.com/yourusername/cricket-win-probability",
-        "demo": "#",
-        "image": "images/project-placeholder.jpg",
+        # "id": 2,
+        # "title": "Cricket Win Probability App",
+        # "description": "A live win-probability predictor for cricket matches, built with a trained ML model and a Flask web interface.",
+        # "technologies": ["Python", "Flask", "Scikit-learn", "JavaScript"],
+        # "github": "https://github.com/yourusername/cricket-win-probability",
+        # "demo": "#",
+        # "image": "images/project-placeholder.jpg",
     },
     {
-        "id": 3,
-        "title": "Terminal-Style Developer Portfolio",
-        "description": "A dark, terminal-themed personal portfolio website with interactive command-line style navigation.",
-        "technologies": ["HTML", "CSS", "JavaScript"],
-        "github": "https://github.com/yourusername/terminal-portfolio",
-        "demo": "#",
-        "image": "images/project-placeholder.jpg",
+        # "id": 3,
+        # "title": "Terminal-Style Developer Portfolio",
+        # "description": "A dark, terminal-themed personal portfolio website with interactive command-line style navigation.",
+        # "technologies": ["HTML", "CSS", "JavaScript"],
+        # "github": "https://github.com/yourusername/terminal-portfolio",
+        # "demo": "#",
+        # "image": "images/project-placeholder.jpg",
     },
 ]
 
