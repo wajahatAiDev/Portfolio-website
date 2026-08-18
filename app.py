@@ -27,8 +27,10 @@ app.secret_key = "replace-this-with-a-random-secret-key"  # CUSTOMIZE: change fo
 PAGE_COVERS = {
     "resume": "images/covers/resume-cover.jpg",
     "projects": "images/covers/projects-cover.jpg",
-    "achievements": "images/covers/achievements-cover.jpg",
+    "achievements": " images/covers/achievements-cover.jpg",
     "blog": "images/covers/blog-cover.jpg",
+    
+    
 }
 
 PROFILE = {
@@ -140,6 +142,15 @@ PROJECTS = [
 # placeholder automatically if the file doesn't exist yet.
 ACHIEVEMENTS = [
     {
+        "title": "Gemini Certified Educator",
+        "date": "2026",
+        "description": """Recognized for outstanding academic performance.
+          to Demonstrated the knowledge, skills, and basic competencies needed
+            to use Google AI in education.""",
+        "category": "Professional",
+        "image": "images/achievements/googleCertificate.png",
+    },
+    {
         "title": "Data Analystis Job Simulation Completion Certificate",
         "date": "August  2026",
         "description": """Completed the Data Analytics Job Simulation by
@@ -147,13 +158,6 @@ ACHIEVEMENTS = [
          technology through practical, real-world tasks. """,
         "category": "Completion",
         "image": "images/achievements/Delotty.png",
-    },
-    {
-        "title": "Dean's Honor List",
-        "date": "2024",
-        "description": "Recognized for outstanding academic performance.",
-        "category": "Academic",
-        "image": "images/achievements/deans-list.jpg",
     },
     {
         "title": "Kaggle Competition — Top 10%",
@@ -172,61 +176,61 @@ ACHIEVEMENTS = [
 # "View Post" button will redirect there instead of the built-in post page.
 # Leave it as None (or remove the key) to use the built-in post page.
 BLOG_POSTS = [
-    {
-        "id": 1,
-        "title": "Getting Started with Machine Learning",
-        "date": "2025-06-10",
-        "category": "Machine Learning",
-        "summary": "A beginner-friendly introduction to the core ideas behind machine learning.",
-        "image": "images/blog/ml-basics.jpg",
-        # CUSTOMIZE: if this post is actually published elsewhere (Medium, dev.to,
-        # LinkedIn Articles, etc.), put that link here and "Read More" will send
-        # visitors straight there instead of an internal page. Leave as None to
-        # use the built-in blog post page instead.
-        "external_url": None,
-        "external_url": None,  # e.g. "https://medium.com/@you/your-post"
-        "content": (
-            "Machine learning can feel overwhelming at first, but it really comes down to "
-            "a few core ideas: data, patterns, and predictions.\n\n"
-            "In this post I walk through the basic workflow I follow when starting a new "
-            "ML project — from cleaning data to training and evaluating a first model.\n\n"
-            "The key takeaway: start simple, get something working end-to-end, then improve "
-            "it step by step."
-        ),
-    },
-    {
-        "id": 2,
-        "title": "Why I Chose to Study Artificial Intelligence",
-        "date": "2025-04-02",
-        "category": "Personal",
-        "summary": "Reflecting on my journey into the field of AI and what excites me most about it.",
-        "image": "images/blog/why-ai.jpg",
-        "external_url": None,  # CUSTOMIZE: e.g. "https://medium.com/@you/why-i-chose-ai"
-        "external_url": None,  # e.g. "https://medium.com/@you/your-post"
-        "content": (
-            "I've always been fascinated by how machines can learn from data instead of "
-            "being explicitly programmed for every rule.\n\n"
-            "Studying AI has opened my eyes to fields like computer vision, natural language "
-            "processing, and reinforcement learning — and I'm excited to keep building projects "
-            "in this space."
-        ),
-    },
-    {
-        "id": 3,
-        "title": "Building My First Flask Web App",
-        "date": "2025-02-15",
-        "category": "Web Development",
-        "summary": "Lessons learned from connecting a trained ML model to a simple Flask backend.",
-        "image": "images/blog/first-flask-app.jpg",
-        "external_url": None,  # CUSTOMIZE: e.g. link to where this post is actually hosted
-        "external_url": None,  # e.g. "https://medium.com/@you/your-post"
-        "content": (
-            "Turning a Jupyter notebook model into an actual working web app taught me a lot "
-            "about the gap between research code and production code.\n\n"
-            "Flask made it straightforward to wrap my model in a few routes and a couple of "
-            "HTML templates, and it's now my go-to tool for quick AI demos."
-        ),
-    },
+    # {
+    #     "id": 1,
+    #     "title": "Getting Started with Machine Learning",
+    #     "date": "2025-06-10",
+    #     "category": "Machine Learning",
+    #     "summary": "A beginner-friendly introduction to the core ideas behind machine learning.",
+    #     "image": "images/blog/ml-basics.jpg",
+    #     # CUSTOMIZE: if this post is actually published elsewhere (Medium, dev.to,
+    #     # LinkedIn Articles, etc.), put that link here and "Read More" will send
+    #     # visitors straight there instead of an internal page. Leave as None to
+    #     # use the built-in blog post page instead.
+    #     "external_url": None,
+    #     "external_url": None,  # e.g. "https://medium.com/@you/your-post"
+    #     "content": (
+    #         "Machine learning can feel overwhelming at first, but it really comes down to "
+    #         "a few core ideas: data, patterns, and predictions.\n\n"
+    #         "In this post I walk through the basic workflow I follow when starting a new "
+    #         "ML project — from cleaning data to training and evaluating a first model.\n\n"
+    #         "The key takeaway: start simple, get something working end-to-end, then improve "
+    #         "it step by step."
+    #     ),
+    # },
+    # {
+    #     "id": 2,
+    #     "title": "Why I Chose to Study Artificial Intelligence",
+    #     "date": "2025-04-02",
+    #     "category": "Personal",
+    #     "summary": "Reflecting on my journey into the field of AI and what excites me most about it.",
+    #     "image": "images/blog/why-ai.jpg",
+    #     "external_url": None,  # CUSTOMIZE: e.g. "https://medium.com/@you/why-i-chose-ai"
+    #     "external_url": None,  # e.g. "https://medium.com/@you/your-post"
+    #     "content": (
+    #         "I've always been fascinated by how machines can learn from data instead of "
+    #         "being explicitly programmed for every rule.\n\n"
+    #         "Studying AI has opened my eyes to fields like computer vision, natural language "
+    #         "processing, and reinforcement learning — and I'm excited to keep building projects "
+    #         "in this space."
+    #     ),
+    # },
+    # {
+    #     "id": 3,
+    #     "title": "Building My First Flask Web App",
+    #     "date": "2025-02-15",
+    #     "category": "Web Development",
+    #     "summary": "Lessons learned from connecting a trained ML model to a simple Flask backend.",
+    #     "image": "images/blog/first-flask-app.jpg",
+    #     "external_url": None,  # CUSTOMIZE: e.g. link to where this post is actually hosted
+    #     "external_url": None,  # e.g. "https://medium.com/@you/your-post"
+    #     "content": (
+    #         "Turning a Jupyter notebook model into an actual working web app taught me a lot "
+    #         "about the gap between research code and production code.\n\n"
+    #         "Flask made it straightforward to wrap my model in a few routes and a couple of "
+    #         "HTML templates, and it's now my go-to tool for quick AI demos."
+    #     ),
+    # },
 ]
 
 # CUSTOMIZE: social / contact links shown on the Contact page and footer
