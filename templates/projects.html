@@ -24,7 +24,7 @@
         </div>
         <div class="project-card-body">
           <h3>{{ project.title }}</h3>
-          <p>{{ project.description }}</p>
+          <p class="project-description{% if project.description_more %} has-more{% endif %}">{{ project.description }}{% if project.description_more %}<span class="desc-more-text">{{ project.description_more }}</span> <button type="button" class="read-more-btn">Read more</button>{% endif %}</p>
           <div class="badge-list">
             {% for tech in project.technologies %}
             <span class="badge badge-small">{{ tech }}</span>

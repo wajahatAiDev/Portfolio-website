@@ -28,6 +28,18 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 5000);
   });
 
+  // Read more / Read less toggle for truncated project descriptions
+  // (badge-list and project-card-links live outside this <p>, as siblings in
+  // the markup, so they are never affected by the expand/collapse toggle.)
+  document.querySelectorAll(".read-more-btn").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const description = btn.closest(".project-description");
+      if (!description) return;
+      const expanded = description.classList.toggle("expanded");
+      btn.textContent = expanded ? "Read less" : "Read more";
+    });
+  });
+
   // Achievement lightbox (View Achievement buttons on the Achievements page)
   const lightbox = document.getElementById("achievementLightbox");
   if (lightbox) {

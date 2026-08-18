@@ -109,7 +109,13 @@ PROJECTS = [
 
         "description": """Titanic Survival Predictor — an end-to-end ML project that 
         trains a classification pipeline (Pclass, Sex, Age, Fare, Embarked, Family size,
-         Name title) on the Titanic dataset, achieving 90% accuracy, and deploys it via a
+         Name title) on the Titanic dataset, achieving 90%""",
+
+        # CUSTOMIZE: OPTIONAL. Any text here is hidden behind a "Read more" toggle
+        # that appears right after "description" above. Leave it out (or set to
+        # None / "") for projects that don't need a collapsible description —
+        # they'll just show "description" in full with no toggle.
+        "description_more": """ accuracy, and deploys it via a
           Flask web app with a custom interface for real-time predictions.""",
 
         "technologies": ["Python", "Scikit-learn", "Pandas", "Flask","Numpy"],
@@ -154,7 +160,7 @@ ACHIEVEMENTS = [
             to use Google AI in education.""",
         "category": "Professional",
         "image": "images/achievements/googleCertificate.png",
-        "verify_url": 'https://edu.google.accredible.com/227ac731-73e3-4dab-8b25-816786e0b893#acc.hm60CMlj',  # e.g. "https://www.credential.net/your-credential-id"
+        "verify_url": 'https://edu.google.accredible.com/227ac731-73e3-4dab-8b25-816786e0b893#acc.mTpX5svy',  # e.g. "https://www.credential.net/your-credential-id"
     },
     {
         "title": "Data Analystis Job Simulation Completion Certificate",
