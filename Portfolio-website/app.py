@@ -154,7 +154,7 @@ ACHIEVEMENTS = [
             to use Google AI in education.""",
         "category": "Professional",
         "image": "images/achievements/googleCertificate.png",
-        "verify_url": 'https://edu.google.accredible.com/227ac731-73e3-4dab-8b25-816786e0b893#acc.hm60CMlj',  # e.g. "https://www.credential.net/your-credential-id"
+        "verify_url": None,  # e.g. "https://www.credential.net/your-credential-id"
     },
     {
         "title": "Data Analystis Job Simulation Completion Certificate",
